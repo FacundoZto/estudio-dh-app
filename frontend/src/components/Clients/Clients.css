@@ -1,0 +1,18 @@
+#carouselExampleSlidesOnly {
+  text-align: -webkit-center;
+  max-width: 444px;
+  margin: auto;
+}
+
+.carousel-item > .comment-card {
+  width: 100%;
+  min-height: 300px;
+  border: none;
+}
+
+.comentary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
