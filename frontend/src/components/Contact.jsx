@@ -14,9 +14,10 @@ const apiUrl = import.meta.env.VITE_API_URL;
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (values, { resetForm }) => {
-    console.log('Formulario enviado:', values);
+    setLoading(true);
     try {
       const response = await fetch(`${apiUrl}/api/send`, {
         method: 'POST',
@@ -28,6 +29,7 @@ const Contact = () => {
 
       if (response.ok) {
         setSubmitted('Mensaje enviado con éxito');
+        setLoading(false);
         resetForm();
       } else {
         setSubmitted('Hubo un error al enviar el mensaje');
@@ -150,7 +152,13 @@ const Contact = () => {
                         className="invalid-feedback" />
                     </div>
 
-                    <button type="submit" className="btn btn-primary btn-lg w-100">Enviar</button>
+                    <button type="submit" className="btn btn-primary btn-lg w-100">
+                      {
+                        loading === false ?
+                          'Enviar' :
+                          <span className="spinner-border" role="status" aria-hidden="true"></span>
+                      }
+                    </button>
                     {
                       submitted &&
                       <div className="alert alert-info my-2 position-absolute" role="alert">
