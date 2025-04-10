@@ -10,13 +10,15 @@ const schema = Yup.object({
   message: Yup.string().required('El mensaje es obligatorio').min(10, 'El mensaje debe tener al menos 10 caracteres')
 })
 
+const apiUrl = import.meta.env.VITE_API_URL;
+
 const Contact = () => {
   const [submitted, setSubmitted] = useState('');
 
   const handleSubmit = async (values, { resetForm }) => {
     console.log('Formulario enviado:', values);
     try {
-      const response = await fetch('http://localhost:5000/api/send', {
+      const response = await fetch(`${apiUrl}/api/send`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
