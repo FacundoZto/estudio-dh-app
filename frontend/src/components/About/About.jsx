@@ -4,7 +4,16 @@ import './About.css'
 const About = () => {
   return (
     <>
-      <img src={about} className="img-fluid" alt="..." id='nosotros'></img>
+      <img 
+      src={about} 
+      className="img-fluid" 
+      alt="Nosotros" 
+      id='nosotros'
+      loading='lazy'
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-offset="0"
+      ></img>
       <section className="border-bottom" id="about-section">
         <h2 className="fw-bolder"> ¿Quiénes somos?</h2>
         <p className="fs-5" data-aos="zoom-in">
