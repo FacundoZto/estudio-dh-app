@@ -5,8 +5,8 @@ const Header = () => {
         <div className="row gx-5 justify-content-center">
           <div className="col-lg-6">
             <div className="text-center my-5">
-              <h2 className="display-6 fw-bolder text-white mb-2">ESTUDIO CONTABLE D&H</h2>
-              <p className="lead text-white-50 mb-4">Creamos una solución profesional a la medida de tus necesidades</p>
+              <h2 className="display-6 fw-bolder text-white mb-2" data-aos="fade-up" data-aos-delay="100">ESTUDIO CONTABLE D&H</h2>
+              <p className="lead text-white-50 mb-4" data-aos="fade-up" data-aos-delay="300">Creamos una solución profesional a la medida de tus necesidades</p>
             </div>
           </div>
         </div>

@@ -9,9 +9,15 @@ const Services = () => {
 
         <div className="row gx-5 justify-content-center row-gap-4">
 
-          <div className="col-lg-6 col-xl-4">
+          <div 
+          className="col-lg-6 col-xl-4" 
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="100"
+          data-aos-offset="0"
+          >
             <div className="card h-100 mb-5 mb-xl-0">
-              <div className="card-body p-5">
+              <div className="card-body p-5" >
                 <h3 className='display-8 fs-5 fw-semibold text-gray mb-2 text-center text-uppercase'>Contables</h3>
 
                 <ul className="list-unstyled text-center">
@@ -40,7 +46,13 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="col-lg-6 col-xl-4">
+          <div 
+          className="col-lg-6 col-xl-4"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="200"
+          data-aos-offset="0"
+          >
             <div className="card h-100 mb-5 mb-xl-0">
               <div className="card-body p-5">
                 <h3 className='display-8 fs-5 fw-semibold text-gray mb-2 text-center text-uppercase'>Impositivos</h3>
@@ -70,7 +82,13 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="col-lg-6 col-xl-4">
+          <div 
+          className="col-lg-6 col-xl-4" 
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+          >
             <div className="card h-100 mb-5 mb-xl-0">
               <div className="card-body p-5">
                 <h3 className='display-8 fs-5 fw-semibold text-gray mb-2 text-center text-uppercase'>Laborales</h3>
