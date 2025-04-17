@@ -10,7 +10,6 @@ router.post('/send', [
   body('phone').notEmpty().withMessage('El teléfono es obligatorio'),
   body('message').notEmpty().withMessage('El mensaje es obligatorio')
 ], async (req, res) => {
-  console.log(req.body);
 
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
@@ -30,8 +29,9 @@ router.post('/send', [
   let mailOptions = {
     from: email,
     to: process.env.EMAIL_USER,
+    replyTo: email,
     subject: `Nuevo mensaje de ${name} ${lastname} ${phone}`,
-    text: message
+    text: `Correo: ${email}\n\n${message}`
   }
 
   try {
