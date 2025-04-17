@@ -1,15 +1,16 @@
 # EstudioDH 
 
-Proyecto completo con frontend y backend para el sitio web de un estudio. Permite mostrar testimonios, capturar mensajes desde un formulario de contacto y enviarlos por correo electrónico usando un servidor Node.js.
+Fullstack landing page for a studio's website. It displays testimonials, captures messages from a contact form, and sends them via email using a Node.js server.
+#### Demo: https://estudiodh.onrender.com/
 
 ---
 
-## 🧩 Tecnologías utilizadas
+## 🧩 Technologies used
 
 ### Frontend (`/frontend`)
 - React
 - Bootstrap 5
-- Formik + Yup (manejo y validación de formularios)
+- Formik + Yup (form handling and validation)
 
 ### Backend (`/backend`)
 - Node.js
@@ -20,12 +21,12 @@ Proyecto completo con frontend y backend para el sitio web de un estudio. Permit
 
 ---
 
-## 🚀 Estructura del proyecto
+## 🚀 Project structure
 
 ```
 EstudioDH/
 │
-├── backend/          → Servidor Express (API para envío de mails)
+├── backend/          → Express Server (API for sending emails)
 │   ├── src/
 │   │   ├── routes/
 │   │   │   └── mail.js
@@ -33,16 +34,16 @@ EstudioDH/
 │   ├── .env          
 │   └── server.js
 │
-└── frontend/        → Aplicación frontend en React
+└── frontend/        → Frontend application in React
     └── src/
         └── components/
 ```
 
 ---
 
-## 🛠️ Cómo correr el proyecto localmente
+## 🛠️ How to run the project locally
 
-### 1. Clonar el repositorio
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/tu-usuario/EstudioDH.git
@@ -53,12 +54,12 @@ cd EstudioDH
 
 ```bash
 cd backend
-cp .env.example .env   # Crear tu archivo .env real
+cp .env.example .env   # Create your real .env file
 npm install
 npm start
 ```
 
-> 🔐 Asegurate de completar el archivo `.env` con tus credenciales de correo.
+> 🔐 Make sure to fill in the `.env` file with your email credentials.
 
 ### 3. Frontend
 
@@ -70,15 +71,15 @@ npm run dev
 
 ---
 
-## 📩 Variables de entorno
+## 📩 Environment variables
 
-En el backend (`/backend/.env`):
+(`/backend/.env`):
 
 ```env
-EMAIL_USER=tu_email@outlook.com
-EMAIL_PASS=tu_contraseña_de_aplicación
+EMAIL_USER=your_email@outlook.com
+EMAIL_PASS=your_password
 ```
 
-> Tu cuenta debe tener habilitada la autenticación de aplicaciones.
+> Your account must have app authentication enabled.
 
 ---
